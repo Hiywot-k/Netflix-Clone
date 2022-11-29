@@ -1,0 +1,41 @@
+.display_poster{
+    width: 100%;
+    /* to fit on the size we assigned to it */
+    object-fit: contain;
+    max-height: 100px;
+    /* to control img pop out speed */
+    transition: transform 450ms;
+    margin-right: 10px;
+    /* margin is the space b/n img*/
+}
+.display_posters{
+    display: flex;
+    /* to make it scroll horizontal  */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+/* to hide the scroller showing */
+.display_posters::-webkit-scrollbar {
+    display: none;
+  }
+/* for image to pop out on hover */
+.display_poster:hover {
+    transform: scale(1.08);
+    opacity: 1.2;
+  }
+  .display_posterLarge{
+    max-height: 250px;
+  }
+  .display__posterLarge:hover {
+    transform: scale(1.09);
+    opacity: 1;
+  }
+ .display{
+    margin-left: 10px;
+    color: white;
+ }
+
+
+
+
